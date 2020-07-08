@@ -26,12 +26,16 @@ let package = Package(
     ],
     targets: [
         .target(name: "SwiftyTimer",
-                exclude: ["Sources/Info.plist", "Sources/SwiftyTimer.h", "SwiftyTimerTests"]),
+            path: "Sources",
+            exclude: ["Sources/Info.plist", "Sources/SwiftyTimer.h", "SwiftyTimerTests"]),
         .target(name: "SwiftyTimer OS X",
-                exclude: ["Sources/Info.plist", "Sources/SwiftyTimer.h", "SwiftyTimerTests"]),
+            path: "Sources",
+            exclude: ["Sources/Info.plist", "Sources/SwiftyTimer.h", "SwiftyTimerTests"]),
         .target(name: "SwiftyTimer tvOS",
-                exclude: ["Sources/Info.plist", "Sources/SwiftyTimer.h", "SwiftyTimerTests"]),
+            path: "Sources",
+            exclude: ["Sources/Info.plist", "Sources/SwiftyTimer.h", "SwiftyTimerTests"]),
         .target(name: "SwiftyTimer watchOS",
-                exclude: ["Sources/Info.plist", "Sources/SwiftyTimer.h", "SwiftyTimerTests"]),
+            path: "Sources",
+            exclude: ["Sources/Info.plist", "Sources/SwiftyTimer.h", "SwiftyTimerTests"]),
     ]
 )
