@@ -6,7 +6,7 @@ let package = Package(
     name: "SwiftyTimer",
     platforms: [
         .iOS(.v8),
-        .macOS(.v10_9),
+        .macOS(.v10_10),
         .watchOS(.v3),
         .tvOS(.v9)
     ],
